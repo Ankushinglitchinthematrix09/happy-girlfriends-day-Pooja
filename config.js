@@ -60,9 +60,31 @@ const CONFIG = {
   // only in that browser, on top of this list — so for a gift you send
   // her, put your real photos here.
   photos: [
-    // { src: "assets/photos/photo1.jpg", caption: "our first date 🍮" },
-    // { src: "assets/photos/photo2.jpg", caption: "that trip we took" },
-  ],
+  {
+    src: "assets/photos/photo1.jpeg",
+    caption: "The smile that brightens my darkest days. ❤️"
+  },
+  {
+    src: "assets/photos/photo2.jpeg",
+    caption: "Every picture of you feels like my favorite memory. 🥰"
+  },
+  {
+    src: "assets/photos/photo3.jpeg",
+    caption: "My beautiful Pooja, always stealing my heart. 💖"
+  },
+  {
+    src: "assets/photos/photo4.jpeg",
+    caption: "One month with you, and I already have a lifetime of happiness. 🌸"
+  },
+  {
+    src: "assets/photos/photo5.jpeg",
+    caption: "You're the reason behind my biggest smiles. ✨"
+  },
+  {
+    src: "assets/photos/photo6.jpeg",
+    caption: "Forever my Rasmalai 🍮💗 I love you endlessly."
+  }
+],
 
   // Text on the button at the end of the moments section that jumps
   // down to the "why I adore you" bouquet section.
