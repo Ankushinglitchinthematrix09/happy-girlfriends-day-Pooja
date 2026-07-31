@@ -9,7 +9,7 @@ const CONFIG = {
 
   // ---- Names ----
   herName: "Pooja",                // shown throughout the site
-  yourSignOff: "Your Person",      // how the closing letter is signed
+  yourSignOff: "Your Bhondu🫶",      // how the closing letter is signed
 
   // ---- Her pet name (shown as a little highlighted line under the hero) ----
   // Leave petNameLine empty ("") to hide this line entirely.
