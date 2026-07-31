@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Girlfriend's Day</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- floating decorative hearts + teddies (purely visual) -->
+  <div class="floaties" aria-hidden="true" id="floaties"></div>
+
+  <!-- ============ SIGNATURE GATE — wax-seal envelope ============ -->
+  <div id="gate">
+    <div class="gate-inner">
+      <span class="gate-tag" id="gateTag">💗 FOR THE GIRL I ADORE</span>
+      <div class="envelope-wrap" id="envelope" role="button" tabindex="0" aria-label="Open the envelope">
+        <div class="envelope-body">
+          <div class="envelope-flap"></div>
+        </div>
+        <div class="seal" id="seal">🧸</div>
+      </div>
+      <span class="tap-hint" id="tapHint">tap to open ♡</span>
+    </div>
+  </div>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="wrap">
+
+    <!-- Hero letter -->
+    <section id="hero">
+      <span class="eyebrow" id="heroTag">FOR MY FAVOURITE PERSON</span>
+      <div class="avatar-ring"><div class="avatar-inner">🧸</div></div>
+      <h1 class="hero-title" id="heroTitle">Happy Girlfriend's Day</h1>
+      <p class="hero-subtitle" id="heroSubtitle">for you, always</p>
+      <p class="pet-line" id="petLine" hidden></p>
+      <p class="hero-body" id="heroBody"></p>
+
+      <div class="song-card" id="songCard" hidden>
+        <div class="song-art">🎵</div>
+        <div class="song-meta">
+          <div class="t" id="songTitle">Our Song</div>
+          <div class="s" id="songSubtitle">a track that's just us</div>
+          <div class="song-progress"><div class="fill" id="songFill"></div></div>
+        </div>
+        <button class="song-play" id="songPlay" aria-label="Play song">▶</button>
+        <audio id="audio" preload="none"></audio>
+      </div>
+      <p class="song-quote" id="songQuote" hidden></p>
+
+      <div class="preview-row" id="previewRow"></div>
+
+      <a class="jump-btn" id="heroJumpBtn" href="#moments">SEE OUR LITTLE ALBUM →</a>
+    </section>
+
+    <div class="garland" aria-hidden="true"><span>🧸 ♡ 💗</span></div>
+
+    <!-- Moments / photo gallery -->
+    <section id="moments">
+      <span class="eyebrow" id="momentsTag">OUR MOMENTS</span>
+      <h2 class="section-title" id="momentsTitle">us, in a few frames</h2>
+      <p class="section-subtitle" id="momentsSubtitle">a handful of moments I'd relive on loop</p>
+
+      <div class="stack" id="stack">
+        <!-- photo cards injected by script.js -->
+      </div>
+
+      <div class="stack-nav">
+        <button class="nav-btn" id="prevBtn" aria-label="Previous photo">←</button>
+        <span class="stack-index" id="stackIndex">1 / 1</span>
+        <button class="nav-btn" id="nextBtn" aria-label="Next photo">→</button>
+      </div>
+
+      <div class="thumb-row" id="thumbRow"></div>
+
+      <!-- clean drag & drop upload -->
+      <label class="dropzone" id="dropzone" for="photoInput">
+        <span class="dropzone-icon">📷💕</span>
+        <span class="dropzone-title">add photos</span>
+        <span class="dropzone-hint">drag & drop here, or click to browse — add as many as you like</span>
+        <input type="file" id="photoInput" accept="image/*" multiple>
+      </label>
+
+      <div class="caption-editor">
+        <input type="text" id="captionInput" placeholder="write a little caption for this one…">
+        <button id="captionSave">save</button>
+      </div>
+
+      <a class="jump-btn" id="momentsJumpBtn" href="#details">WHY I ADORE YOU →</a>
+    </section>
+
+    <div class="garland" aria-hidden="true"><span>🧸 ♡ 💗</span></div>
+
+    <!-- Little details -->
+    <section id="details">
+      <span class="eyebrow" id="detailsTag">LITTLE DETAILS</span>
+      <h2 class="section-title" id="detailsTitle">the little things I notice</h2>
+      <p class="section-subtitle" id="detailsSubtitle">small stuff, big feelings</p>
+
+      <div class="details-grid" id="detailsGrid"></div>
+
+      <a class="jump-btn" id="detailsJumpBtn" href="#bouquet">A LITTLE BOUQUET →</a>
+    </section>
+
+    <div class="garland" aria-hidden="true"><span>🧸 ♡ 💗</span></div>
+
+    <!-- Bouquet / reasons -->
+    <section id="bouquet">
+      <span class="eyebrow" id="bouquetTag">A LITTLE BOUQUET</span>
+      <h2 class="section-title" id="bouquetTitle">a bloom for every reason I adore you</h2>
+      <p class="section-subtitle" id="bouquetSubtitle">picked just for you</p>
+
+      <div class="bouquet-grid" id="bouquetGrid"></div>
+
+      <div class="add-reason">
+        <input type="text" id="reasonInput" placeholder="add one more reason…" maxlength="60">
+        <button id="reasonSave">add 💗</button>
+      </div>
+    </section>
+
+    <div class="garland" aria-hidden="true"><span>🧸 ♡ 💗</span></div>
+
+    <!-- Closing letter -->
+    <section id="letter">
+      <span class="eyebrow" id="letterTag">ONE LAST THING</span>
+      <div class="letter-card" id="letterCard">
+        <div id="letterBody"></div>
+        <hr class="letter-divider">
+        <div class="letter-sign">yours, completely, 🧸</div>
+        <div class="letter-signoff" id="letterSignoff">— YOUR PERSON</div>
+      </div>
+    </section>
+
+    <footer>made with 🧸 + 💗 — happy girlfriend's day</footer>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
